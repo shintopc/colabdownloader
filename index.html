@@ -5,21 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Colab Downloader</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.ico">
+  <meta name="theme-color" content="#2d89ef">
   <style>
-    html, body, iframe {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      text-align: center;
     }
-    iframe {
-      display: block;
+    .container {
+      max-width: 400px;
+    }
+    button {
+      padding: 12px 20px;
+      background: #2d89ef;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1a5db6;
     }
   </style>
 </head>
 <body>
-  <!-- Replace with your Colab notebook URL -->
-  <iframe src="https://colab.research.google.com/drive/16KzQcMD3ILI7MEnxB0ljDe3bMteyAH2n" frameborder="0"></iframe>
+  <div class="container">
+    <h2>🚀 Open Colab Downloader</h2>
+    <p>Click below to launch your Google Colab notebook.</p>
+    <button onclick="openColab()">Open Colab</button>
+  </div>
+
+  <script>
+    function openColab() {
+      // Replace with your actual notebook URL
+      window.location.href = "https://colab.research.google.com/drive/xxxxxxxxxxxx";
+    }
+  </script>
 </body>
 </html>
