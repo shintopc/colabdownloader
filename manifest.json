@@ -1,7 +1,7 @@
 {
   "name": "Colab Downloader",
   "short_name": "Colab",
-  "start_url": "colab-pwa.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2d89ef",
